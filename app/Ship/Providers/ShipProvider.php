@@ -4,7 +4,7 @@ namespace App\Ship\Providers;
 
 use App\Ship\Parents\Providers\MainProvider;
 use App\Ship\Parents\Providers\RoutesProvider;
-use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
+
 
 class ShipProvider extends MainProvider
 {
@@ -33,13 +33,6 @@ class ShipProvider extends MainProvider
      */
     public function register(): void
     {
-        /**
-         * Load the ide-helper service provider only in non production environments.
-         */
-        if ($this->app->isLocal()) {
-            $this->app->register(IdeHelperServiceProvider::class);
-        }
-
         parent::register();
     }
 }

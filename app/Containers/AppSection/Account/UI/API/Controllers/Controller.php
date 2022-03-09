@@ -12,4 +12,9 @@ class Controller extends ApiController
         $accounts = app(GetAllAccountsAction::class)->run();
         return $this->json($accounts);
     }
+
+    public function test()
+    {
+        return $this->json('Subham');
+    }
 }

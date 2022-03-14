@@ -19,7 +19,7 @@ class GetAllAccountsAction extends Action
 
         Log::debug("Start : " . $start);
         Log::debug("end : " . $end);
-        Log::debug("Diff : " . $end->diff($start));
+        Log::debug("Diff : " . $end - $start);
         return $data;
     }
 }

@@ -16,6 +16,6 @@ class GetAllDDFDetailsTask extends Task
 
     public function run()
     {
-        return $this->repository->paginate();
+        return $this->repository->paginate(\config('app.page_size'));
     }
 }

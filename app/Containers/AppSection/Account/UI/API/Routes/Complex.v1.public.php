@@ -23,6 +23,5 @@ use App\Containers\AppSection\Account\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('complex', [Controller::class, 'complex'])
-    ->name('api_account_complex')
-    ->middleware(['auth:api']);
+    ->name('api_account_complex');
 

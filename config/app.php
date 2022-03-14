@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Apiato'),
 
+    'page_size' => 1000,
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
